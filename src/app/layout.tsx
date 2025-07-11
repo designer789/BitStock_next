@@ -1,6 +1,5 @@
 "use client";
 
-import type { Metadata } from "next";
 import { Manrope, Source_Serif_4 } from "next/font/google";
 import "./globals.css";
 import { useEffect } from "react";
@@ -36,7 +35,7 @@ function LayoutClient({
           setTimeout(() => {
             ScrollTrigger.refresh();
           }, 100);
-        } catch (error) {
+        } catch {
           // ScrollTrigger not available, continue silently
         }
       }
